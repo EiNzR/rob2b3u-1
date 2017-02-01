@@ -1,5 +1,5 @@
 #include "SoftwareSerial.h"
-#include "TinyGPS"
+#include "TinyGPS.h"
 #include "Servo.h"
 
 #define gpsRXPIN 5
@@ -50,7 +50,7 @@ void loop() {
     getGPS(&baseLat, &baseLon, &Status);
     count--;
     if (Status == 2) {
-      botGPSknown();
+      bothGPSknown();
       count = 0;
       break;
     }   
@@ -85,7 +85,8 @@ void RecieveGPSLocation(float* latData, float* lonData) {
   char inChar;
   String A = "";
 
-  while (inChar != "") {
+  while ( inChar != ' ')
+  {
    inChar = XBee.read();
   }
 
@@ -105,7 +106,7 @@ void RecieveGPSLocation(float* latData, float* lonData) {
   *lonData = A.toFloat();
 }
 
-void getGPS(fload* lat, float* lon, int* Status) {
+void getGPS(float* lat, float* lon, int* Status) {
   float flat;
   float flon;
   unsigned long fix_age;
@@ -139,7 +140,7 @@ void getGPS(fload* lat, float* lon, int* Status) {
   }
 }
 
-void ServoPointCommand(fload baseLat, float baseLon, float targetLat, float targetLon) {
+void ServoPointCommand(float baseLat, float baseLon, float targetLat, float targetLon) {
   float latDiff, lonDiff, theta;
   double servoPosition;
 
@@ -156,7 +157,7 @@ void ServoPointCommand(fload baseLat, float baseLon, float targetLat, float targ
   Serial.println("theta");
   Serial.println(theta);
 
-  servoPosition = map(theta, -180, 0, 0 180);
+  servoPosition = map(theta, -180, 0, 0, 180);
   servoPosition = constrain(servoPosition, 0, 180);
   servo1.write(servoPosition);
 }
