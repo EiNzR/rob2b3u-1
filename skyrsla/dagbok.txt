@@ -6,3 +6,5 @@ Bjuggum til tímatöflu og unnum í lýsingu
 Kláruðum lýsingu og fórum yfir hardware
 1/2/´17
 Byrjuðum á að testa gps
+3/2/´17 - 17/2/´17
+Testum allt sem við getum
