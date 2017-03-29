@@ -8,3 +8,7 @@ Kláruðum lýsingu og fórum yfir hardware
 Byrjuðum á að testa gps
 3/2/´17 - 17/2/´17
 Testum allt sem við getum
+22/2/´17 - 24/3/´17
+Reyndum allt sem við gátum til að reyna að fá gps til að virka, ekkert gekk.
+29/3/´17
+Gáfumst upp á gps, settum saman basic robot í staðinn.
