@@ -18,3 +18,5 @@ Settum batterí á squarebottann og löguðum vitlausar tengingar o.fl.
 Gerðum heimilarskrá fyrir bæði gamla verkefnið (GPS-inn) og squarebottann, syncuðum og prufuðum robot.
 26/4/'17
 Settum lcd skjá og ultrasonic range module á róbotinn.
+3/5/'17
+Tókum upp myndband af róbotinum.
