@@ -20,3 +20,5 @@ Gerðum heimilarskrá fyrir bæði gamla verkefnið (GPS-inn) og squarebottann, 
 Settum lcd skjá og ultrasonic range module á róbotinn.
 3/5/'17
 Tókum upp myndband af róbotinum.
+10/5/'17
+Tók róbotinn í sundur. Skilaði dagbók.
